@@ -1,4 +1,4 @@
-![img/main_image.png](img/main_image.png)
+![img/main-image.png](img/main-image.png)
 # Encriptador de textos!!!
 Encriptador de texto parte del Challenge Alura ONE Oracle Next Education.
 ##  👉[Mira el proyecto aquí](https://tonaya23.github.io/Encriptador-de-textosss/)👈
