@@ -1,1 +1,30 @@
 # Encriptador de textos!!!
+_Challenge ONE Sprint 01: Construye un encriptador de texto con Javascript._
+##  👉[Mira el proyecto aquí](https://tonaya23.github.io/Encriptador-de-textosss/)👈
+
+## 🔧 Construido con 
+* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+## ✔️ Requisitos del desafío 
+* _Debe funcionar solo con letras minúsculas_
+* _No deben ser utilizados letras con acentos ni caracteres especiales_
+* _Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original._
+```
+Por ejemplo:
+"gato" => "gaitober"
+gaitober" => "gato"
+```
+### Extras:
+* Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción 
+"copiar" del menú de las aplicaciones._
+## 🔑 Llaves de encriptación
+Las llaves de encriptación solicitadas son las siguientes:
+* La letra "a" es convertida a "ai".
+* La letra "e" es convertida a "enter".
+* La letra "i" es convertida a "imes".
+* La letra "o" es convertida a "ober"
+* La letra "u" es convertida a "ufat"
+
+## Contacto
+linkedin - [https://www.linkedin.com/in/angel-gerardo-orozco-gonzalez-4523b1272/](https://www.linkedin.com/in/angel-gerardo-orozco-gonzalez-4523b1272/) 
