@@ -1,0 +1,305 @@
+/* Fuente de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0 40px;
+  padding: 0;
+}
+
+/* Encabezado */
+.titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.parte__encriptar {
+  margin-bottom: 50px;
+}
+
+/* Etiquetas de texto */
+label {
+  display: block;
+  margin: 20px 0 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Cajas de texto */
+input[type="text"],
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 50vh;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* Botones */
+.botones__verdes,
+.boton__limpiar {
+  padding: 12px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background-color 0.4s ease;
+}
+
+.botones__verdes {
+  background-color: #4caf50;
+}
+
+.boton__limpiar {
+  background-color: #cc3f3f;
+  float: right;
+}
+
+.botones__verdes:hover {
+  background-color: #3e8e41;
+}
+
+.boton__limpiar:hover {
+  background-color: #aa3030;
+}
+
+/* Área de resultado */
+#resultado {
+  height: 150px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #333;
+  color: #fff;
+  letter-spacing: 0.8px;
+  position: fixed;
+  margin-bottom: 0px;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer__nombre {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 340px;
+  justify-content: flex-end;
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .botones__verdes {
+  background-color: #00db6e;
+  color: #000000;
+}
+
+.dark-mode .boton__limpiar {
+  background-color: #c93600;
+}
+
+.dark-mode .switch:before {
+  background-color: #fff;
+}
+
+.dark-mode .switch:after {
+  background-color: #fff;
+}
+
+/* boton switch modo */
+.switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #cecece;
+  cursor: pointer;
+}
+
+.switch:before,
+.switch:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.switch:before {
+  background-color: #000000;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.switch:after {
+  background-color: #ffffff;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode .switch:before {
+  transform: translateX(100%);
+}
+
+.dark-mode .switch:after {
+  background-color: #000000;
+  transform: translateX(100%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Media queries para hacer la página responsive */
+
+/* Para pantallas de hasta 576px */
+@media (max-width: 776px) {
+  .container {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .titulo {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .parte__desencriptar {
+    margin-top: 70px;
+  }
+
+  body {
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .botones__verdes,
+  .boton__limpiar {
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .boton__limpiar {
+    float: right;
+  }
+
+  #resultado {
+    height: 120px;
+    font-size: 16px;
+  }
+  footer {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .titulo {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  body {
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  label {
+    font-size: 14px;
+    margin: 10px 0 3px;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 10px;
+    padding: 8px;
+    margin-bottom: 0px;
+  }
+
+  .botones__verdes,
+  .boton__limpiar {
+    float: left;
+    margin-top: 4px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  #resultado {
+    height: 90px;
+    font-size: 10px;
+  }
+
+  footer {
+    margin: -12%;
+    font-size: 10px;
+    padding: 0px;
+  }
+}

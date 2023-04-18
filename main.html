@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/xbox__profilepicture1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Encriptador de textos!!!</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="switch" id="switch" onclick="toggleDarkMode()">
+        <span class="sr-only">Cambiar de modo</span>
+      </button>
+      <h1 class="titulo">Encriptador y Desencriptador de textos!!!</h1>
+      <div class="parte__encriptar">
+      <label for="texto"
+        >Ingresa el texto que quieras encriptar o desencriptar:</label
+      >
+      <textarea
+        id="texto"
+        rows="4"
+        placeholder="Escribe tu texto aquí"
+        cols="50"
+        pattern="[a-z]+"
+        required
+      ></textarea>
+      <br />
+      <div class="botones">
+      <button class="botones__verdes" onclick="encriptar()">Encriptar</button>
+      <button class="botones__verdes" onclick="desencriptar()">Desencriptar</button>
+      <br />
+    </div>
+    </div>
+    <div class="parte__desencriptar">
+      <label for="resultado">Texto encriptado/desencriptado:</label>
+      <textarea
+        id="resultado"
+        rows="4"
+        placeholder="Aquí aparecerá el resultado"
+        cols="50"
+        contenteditable="true"
+      ></textarea>
+      <div class="botones">
+      <button class="botones__verdes" onclick="copiarResultado()">Copiar resultado</button>
+      <button class="boton__limpiar" onclick="limpiar()">Limpiar</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Proyecto realizado para el Programa ORACLE + Alura Latam.</p>
+      <div class="footer__nombre">Desarrollado por Gerardo Orozco.</div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
