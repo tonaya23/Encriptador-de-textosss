@@ -1,4 +1,4 @@
-![img/main-image.png](img/main-image.png)
+[![PRESENTACION-PRINCIPAL.png](https://i.postimg.cc/vBwyRJGW/PRESENTACION-PRINCIPAL.png)](https://postimg.cc/7C9d0QG6)
 # Encriptador de textos!!!
 Encriptador de texto parte del Challenge Alura ONE Oracle Next Education.
 ##  👉[Mira el proyecto aquí](https://tonaya23.github.io/Encriptador-de-textosss/)👈
