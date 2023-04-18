@@ -108,21 +108,14 @@ textarea {
   width: 100%;
   height: auto;
   padding: 20px;
-  display: flex;
+  display: fixed;
   justify-content: center;
   align-items: center;
 }
 
 .footer p {
   margin: 0;
-}
-
-.footer__nombre {
-  display: flex;
   gap: 5px;
-  align-items: center;
-  width: 50%;
-  justify-content: flex-end;
 }
 
 /* Estilos para el modo oscuro */
@@ -209,10 +202,17 @@ textarea {
 
 /* Media queries para hacer la página responsive */
 
-/* Para pantallas de hasta 776px */
-@media (max-height: 798px) {
+@media (max-height: 1000px) {
   .container {
-    width: 80%;
+    width: 85%;
+    margin: 0px auto;
+  }
+}
+
+/* Para pantallas de hasta 776px */
+@media (max-width: 798px) {
+  .container {
+    width: 90%;
     margin: 0px auto;
   }
   .titulo {
@@ -229,7 +229,7 @@ textarea {
   body {
     margin: 0 5px;
     padding: 0;
-    overflow: hidden; 
+    overflow: visible; /* agrega barra de desplazamiento si es necesario */
   }
 
   label {
@@ -262,16 +262,8 @@ textarea {
   }
   .footer {
     font-size: 12px;
-    padding: 10px;
+    padding: 18px;
     margin-top: 100px; /* ajusta según sea necesario */
-  }
-
-  .footer__nombre {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    width: 5%;
-    justify-content: flex-end;
   }
 
   .switch {
@@ -280,7 +272,7 @@ textarea {
   }
 }
 
-@media (max-height: 320px) {
+@media (max-width: 350px) {
   .container {
     width: 100%;
     margin: 0px auto;
@@ -326,7 +318,7 @@ textarea {
   .footer {
     display: none;
   }
-  
+
   .switch {
     position: relative;
     width: 25px;
