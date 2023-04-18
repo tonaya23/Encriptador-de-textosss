@@ -13,6 +13,8 @@ body {
   color: #333;
   margin: 0 40px;
   padding: 0;
+  transition: all 0.35s ease;
+  overflow: hidden; /* agrega barra de desplazamiento si es necesario */
 }
 
 /* Encabezado */
@@ -75,6 +77,7 @@ textarea {
 .boton__limpiar {
   background-color: #cc3f3f;
   float: right;
+  margin-bottom: 90px;
 }
 
 .botones__verdes:hover {
@@ -118,19 +121,19 @@ textarea {
   display: flex;
   gap: 5px;
   align-items: center;
-  width: 340px;
+  width: 50%;
   justify-content: flex-end;
 }
 
 /* Estilos para el modo oscuro */
 .dark-mode {
   background-color: #333;
-  color: #fff;
+  color: #fffffd;
+  transition: all 0.35s ease;
 }
 
 .dark-mode .botones__verdes {
   background-color: #00db6e;
-  color: #000000;
 }
 
 .dark-mode .boton__limpiar {
@@ -145,7 +148,12 @@ textarea {
   background-color: #fff;
 }
 
-/* boton switch modo */
+.dark-mode .footer {
+  background-color: #d8d8d8;
+  color: #000000;
+}
+
+/* boton switch modo obscuro */
 .switch {
   position: absolute;
   top: 10px;
@@ -201,25 +209,27 @@ textarea {
 
 /* Media queries para hacer la página responsive */
 
-/* Para pantallas de hasta 576px */
-@media (max-width: 776px) {
+/* Para pantallas de hasta 776px */
+@media (max-height: 798px) {
   .container {
     width: 80%;
     margin: 0px auto;
   }
   .titulo {
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
   }
 
   .parte__desencriptar {
-    margin-top: 70px;
+    margin-top: 40px;
+    max-width: 100%;
   }
 
   body {
     margin: 0 5px;
     padding: 0;
+    overflow: hidden; 
   }
 
   label {
@@ -241,20 +251,36 @@ textarea {
   }
 
   .boton__limpiar {
+    background-color: #cc3f3f;
     float: right;
+    margin-bottom: 90px;
   }
 
   #resultado {
     height: 120px;
     font-size: 16px;
   }
-  footer {
+  .footer {
     font-size: 12px;
-    padding: 5px;
+    padding: 10px;
+    margin-top: 100px; /* ajusta según sea necesario */
+  }
+
+  .footer__nombre {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 5%;
+    justify-content: flex-end;
+  }
+
+  .switch {
+    width: 40px;
+    height: 20px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-height: 320px) {
   .container {
     width: 100%;
     margin: 0px auto;
@@ -263,7 +289,7 @@ textarea {
   .titulo {
     text-align: left;
     font-size: 16px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 20px;
   }
 
@@ -297,9 +323,14 @@ textarea {
     font-size: 10px;
   }
 
-  footer {
-    margin: -12%;
-    font-size: 10px;
-    padding: 0px;
+  .footer {
+    display: none;
+  }
+  
+  .switch {
+    position: relative;
+    width: 25px;
+    height: 15px;
+    right: 0;
   }
 }
