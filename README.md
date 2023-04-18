@@ -27,5 +27,23 @@ Las llaves de encriptación solicitadas son las siguientes:
 * La letra "o" es convertida a "ober"
 * La letra "u" es convertida a "ufat"
 
+# Funciones adicionales agregadas  
+
+|  Estado  |  Funcion  |
+|  -------------  |  -------------  |
+|  ✅  |  Boton para copiar texto  |
+|  ✅  |  Boton para limpiar texto  |  
+|  ✅  |  Agregado boton para pegar texto  |
+|  ✅  |  Alerta dinamica si no hay texto para encriptar  |
+|  ✅  |  Alerta dinamica si ingresas caracteres no validos  |  
+|  ✅  |  Modo obscuro |  
+
+# Funciones en desarrollo  
+
+|  Estado  |  Funcion  |
+|  -------------  |  -------------  |
+|  🟠  |  Modo responsivo mejorado  |
+|  🟠 |  Mejorar interactividad  |
+
 ## Contacto
 linkedin - [https://www.linkedin.com/in/angel-gerardo-orozco-gonzalez-4523b1272/](https://www.linkedin.com/in/angel-gerardo-orozco-gonzalez-4523b1272/) 
