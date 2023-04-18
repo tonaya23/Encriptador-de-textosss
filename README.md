@@ -1,8 +1,8 @@
+![img/main_image.png](img/main_image.png)
 # Encriptador de textos!!!
 Encriptador de texto parte del Challenge Alura ONE Oracle Next Education.
 ##  👉[Mira el proyecto aquí](https://tonaya23.github.io/Encriptador-de-textosss/)👈
 
-![img/main_image.png](img/main_image.png)
 ## 🔧 Construido con 
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
